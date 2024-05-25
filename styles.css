@@ -1,0 +1,24 @@
+.story-container {
+    width: 300px; /* Set the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.story-image {
+    height: 300px; /* Set the height of the image */
+    width: auto;   /* Maintain aspect ratio */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.story-text {
+    margin-top: 40px; /* Add some space between the image and text */
+    display: none; /* Hide story preview */
+}
+
+.story-container:hover .story-text {
+    display: block; /* Show the story preview on hover */
+}
+
+a {
+    display: block; /* Make links block elements to stack vertically */
+    margin-top: 30px; /* Add some space between links */
+}

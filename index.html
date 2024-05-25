@@ -3,17 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>AI Story Site</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>AI Story Page</h1>
     </header>
     <main>
-        <img src=""
-        <a href="#" onclick="downloadStory('story1'); return false;">Animorphs Vol 1 - Download This Story</a>
-        <div id="story1" style="display: none;">
-            In a small village surrounded by dense woods, a young girl named Emily discovered an ancient map that led to a mysterious forest filled with magical creatures and hidden treasures. Her journey through the forest revealed secrets of her ancestors and unlocked powers she never knew she had.
+        <div class="story-container">
+            <img src="Animorphs\cover_images\Ani 01.0 - The Invasion - K. A. Applegate_cover.png" alt="Story Image" class="story-image">
+            <div id="story1" class="story-text">
+                <p> My name is Jake. That's my first name, obviously. I can't tell you my last name. It would be too
+                    dangerous. The Controllers are everywhere. Everywhere. And if they knew my full name, they could
+                    find me and my friends, and then . . . well, let's just say I don't want them to find me. What they do to
+                    people who resist them is too horrible to think about.<br>
+                    I won't even tell you where I live. You'll just have to trust me that it is a real place, a real town.
+                    It may even be your town.<br>
+                    I'm writing this all down so that more people will learn the truth. Maybe then, somehow, the
+                    human race can survive until the Andalites return and rescue us, as they promised they would.<br>
+                    Maybe.</p>
+            </div>
+            <a href="Animorphs\PDF\Ani 01.0 - The Invasion - K. A. Applegate.pdf" download>Animorphs Vol 1: Download Story</a>
+            <a href="output\combined_audio.mp3" download>Download Audio</a>
         </div>
     </main>
     <script src="scripts.js"></script>
