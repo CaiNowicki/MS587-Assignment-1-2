@@ -44,7 +44,6 @@ output/audio/chunk_43.mp3
 output/audio/chunk_44.mp3
 output/audio/chunk_45.mp3
 output/audio/chunk_46.mp3
-Animorphs/cover_images/Ani 02.0 - The Visitor - K. A. Applegate_cover.png
 Animorphs/cover_images/Ani 03.0 - The Encounter - K. A. Applegate_cover.png
 Animorphs/cover_images/Ani 04.0 - The Message - K. A. Applegate_cover.png
 Animorphs/cover_images/Ani 05.0 - The Predator - K. A. Applegate_cover.png
@@ -107,7 +106,6 @@ Animorphs/cover_images/Ani 51.0 - The Absolute - K. A. Applegate_cover.png
 Animorphs/cover_images/Ani 52.0 - The Sacrifice - K. A. Applegate_cover.png
 Animorphs/cover_images/Ani 53.0 - The Answer - K. A. Applegate_cover.png
 Animorphs/cover_images/Ani 54.0 - The Beginning - K. A. Applegate_cover.png
-Animorphs/PDF/Ani 02.0 - The Visitor - K. A. Applegate.pdf
 Animorphs/PDF/Ani 03.0 - The Encounter - K. A. Applegate.pdf
 Animorphs/PDF/Ani 04.0 - The Message - K. A. Applegate.pdf
 Animorphs/PDF/Ani 05.0 - The Predator - K. A. Applegate.pdf
@@ -172,3 +170,4 @@ Animorphs/PDF/Ani 53.0 - The Answer - K. A. Applegate.pdf
 Animorphs/PDF/Ani 54.0 - The Beginning - K. A. Applegate.pdf
 output/combined_audio.mp3
 .env
+output/combined_audio_vol2.mp3

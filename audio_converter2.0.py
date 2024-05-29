@@ -146,7 +146,7 @@ def combine_audio_with_moviepy(folder_path, output_file):
         print("No audio clips to combine.")
 
 # Define the input PDF file path
-pdf_path = 'Animorphs/PDF/Ani 01.0 - The Invasion - K. A. Applegate.pdf'
+pdf_path = 'Animorphs/PDF/Ani 02.0 - The Visitor - K. A. Applegate.pdf'
 
 # Convert PDF to Markdown
 markdown_content = pdf_to_markdown(pdf_path)
@@ -162,5 +162,5 @@ output_folder = 'output/audio'
 audio_files = convert_chunks_to_audio(chunks, output_folder)
 
 # Combine audio files into a single audio file (if needed)
-output_file = 'output/combined_audio.mp3'
+output_file = 'output/combined_audio_vol2.mp3'
 combine_audio_with_moviepy(output_folder, output_file)

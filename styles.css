@@ -31,8 +31,15 @@ header h1 {
 }
 
 .story-container {
-    width: 300px; /* Set the width of the container */
-    margin: 0 auto; /* Center the container horizontally */
+    display: flex;
+    align-items: flex-start;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    width: 48%; /* adjusted so two stories fit side by side */
+    position: relative;
 }
 
 .story-image {
@@ -42,12 +49,35 @@ header h1 {
 }
 
 .story-text {
-    margin-top: 40px; /* Add some space between the image and text */
-    display: none; /* Hide story preview */
+    flex: 1;
 }
 
-.story-container:hover .story-text {
+.story-text h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.story-text p {
+    margin-bottom: 20px;
+    color: #666;
+    display: none; /* initially hide preview text */
+}
+
+.story-container:hover .story-text p {
     display: block; /* Show the story preview on hover */
+}
+
+.story-text a {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.story-text a:hover {
+    color: #0056b3
 }
 
 .story-wrapper {
@@ -58,4 +88,12 @@ header h1 {
 a {
     display: block; /* Make links block elements to stack vertically */
     margin-top: 30px; /* Add some space between links */
+}
+
+/*Responsiveness on small screens */
+/*Switches to one story per line if screen is too small */
+@media (max-width: 768px) {
+    .story-container {
+        width: 100%;
+    }
 }
