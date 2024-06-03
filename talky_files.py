@@ -6,6 +6,7 @@ from gtts import gTTS
 import fitz  # PyMuPDF
 from mutagen.mp3 import MP3
 import threading
+import re
 
 
 # Define the main app class
@@ -43,6 +44,11 @@ class TalkyFiles(tk.Tk):
             self.thread = threading.Thread(target=self.convert_to_audio)
             self.thread.start()
 
+    def sanitize_text(self, text):
+        """Sanitize the text to handle special characters."""
+        return re.sub(r'[^\x20-\x7E]+', '', text)
+
+
     def convert_to_audio(self):
         print("Inside convert_to_audio method")
         try:
@@ -62,13 +68,13 @@ class TalkyFiles(tk.Tk):
 
             elif extension.lower() == 'txt':
                 # Text file conversion
-                with open(self.file_path, 'r') as file:
+                with open(self.file_path, 'r', encoding='utf-8') as file:
                     text = file.read()
 
             else:
                 raise ValueError("Unsupported file type. Please select a PDF or TXT file.")
-
-            tts = gTTS(text, lang='en')  
+            sanitized_text = self.sanitize_text(text)
+            tts = gTTS(sanitized_text, lang='en')  
             audio_file = filename + '.mp3'  # Use the same base filename
             tts.save(audio_file)
 
